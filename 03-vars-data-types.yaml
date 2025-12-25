@@ -1,0 +1,7 @@
+- name: Data_Types
+  hosts: local
+  connection: local
+  tasks:
+  - name: var_data_types
+    ansible.builtin.debug:
+      msg: "Hello World"

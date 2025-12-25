@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars:
-    COURSE: ansibile
+    COURSE: Ansible
     DURATION: 120hrs
     TRAINER: Amar
   tasks:
   - name: Print the course details
-    ansibile.builtin.debug:
+    ansible.builtin.debug:
       msg: "Course name is {{COURSE}} and duration of {{DURATION}} and going to be trained by {{TRAINER}}"

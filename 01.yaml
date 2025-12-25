@@ -1,0 +1,12 @@
+-name: Play-01
+hosts: local
+tasks: 
+  -name : play-01 and task-01
+  ansibile.builtin.debug:
+    msg: "This is play-01 and task-01"
+-name: Play-02
+hosts: local
+tasks: 
+  -name : play-02 and task-01
+  ansibile.builtin.debug:
+    msg: "This is play-02 and task-01"

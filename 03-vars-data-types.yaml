@@ -1,7 +1,14 @@
 - name: Data_Types
   hosts: local
   connection: local
+  vars-prompt:
+    - name: username
+      prompt: What is your user name:
+      private: false
+    - name: password
+      prompt: what is the password:
+      private: true
   tasks:
-  - name: var_data_types
-    ansible.builtin.debug:
-      msg: "Hello World"
+    - name: print the output
+      ansible.builtin.debug:
+        msg: "Hello this is {{username}} and password is {{password}}"

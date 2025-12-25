@@ -7,4 +7,4 @@ vars:
 tasks:
   -name: print the course details
   ansibile.builtin.debug:
-  msg: "Course is {{COURSE}} and duration is {{DURATION}}"
+    msg: "Course is {{COURSE}} and duration is {{DURATION}}"

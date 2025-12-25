@@ -1,7 +1,7 @@
 - name: Data Types
   hosts: local
   connection: local
-  vars-prompt:
+  vars_prompt:
     - name: username
       prompt: What is your user name?
       private: false

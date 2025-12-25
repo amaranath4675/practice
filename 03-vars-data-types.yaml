@@ -1,4 +1,4 @@
-- name: Data_Types
+- name: Data Types
   hosts: local
   connection: local
   vars-prompt:
